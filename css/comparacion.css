@@ -1,0 +1,42 @@
+/* Estilos para la letra formal */
+body {
+    font-family: 'Arial', sans-serif; /* Cambiar por la fuente formal deseada */
+}
+
+/* Estilos específicos para la sección de comparación de seguros */
+.container-comparacion {
+    margin-top: 50px;
+}
+
+.container-comparacion h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #042c53; /* Color azul */
+}
+
+.container-comparacion p,
+.container-comparacion ul {
+    font-size: 18px;
+    color: #333; /* Color de texto oscuro */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.container-comparacion ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.container-comparacion li {
+    margin-bottom: 10px;
+}
+
+.container-comparacion h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #042c53; /* Color azul */
+}
+
+.container-comparacion .beneficios,
+.container-comparacion .desventajas {
+    margin-bottom: 30px;
+}
