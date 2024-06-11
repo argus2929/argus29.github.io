@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: auto;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <header>
+        <img src="img/logo.png" alt="Logo" class="navbar-logo" id="logo">
+        <div class="flexRow">
+            <a href="clientes.php#btnBajar" class="navbar-text">Quiénes somos</a>
+            <a href="experienciagc.php" class="navbar-text" id="headerExpGC">Experiencia GC</a>
+            <a href="dancaceres.php" class="navbar-text" id="headerMentor">El Mentor de los Seguros</a>
+        </div>
+        <a href="contactanos.php" class="navbar-text">Contáctanos</a>
+    </header>
+
+
+    <div class="indexOpciones">
+        <div class="indexClientes" id="indexClientes">
+            <h1 class="gb" id="txtCliente">Quiero un<br>Plan de retiro</h1>
+            <button class="gl" id="btnCliente">Información</button>
+        </div>
+        <div class="indexAgentes" id="indexAgentes">
+            <h1 class="gb" id="txtAgente">Quiero<br>ser agente</h1>
+            <button class="gl" id="btnAgente">Información</button>
+        </div>
+    </div>
+
+    <div>
+        <link rel="stylesheet"
+            href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" target="_blank" href="https://wa.link/ud3f6y">
+            <div class="rwb-tooltip" style="background-color: white;">WhatsApp!</div>
+            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+        </a>
+    </div>
+
+</body>
+
+<!--JS PERSONALIZADO-->
+<script type="text/javascript">
+
+
+
+    var btnCliente = document.getElementById("btnCliente");
+    var btnAgente = document.getElementById("btnAgente");
+
+    btnCliente.addEventListener("click", function () {
+        window.location.href = "clientes.php";
+    });
+
+    btnAgente.addEventListener("click", function () {
+        window.location.href = "agentes.php";
+    });
+
+    var indexAgentes = document.getElementById("indexAgentes");
+    var indexClientes = document.getElementById("indexClientes");
+    var txtAgente = document.getElementById("txtAgente");
+    var txtCliente = document.getElementById("txtCliente");
+
+
+    indexAgentes.addEventListener("click", function () {
+        console.log("primerclick");
+        if (indexAgentes.style.width === "50%") {
+
+            indexAgentes.style.width = "80%";
+            txtAgente.style.fontSize = "120px";
+            btnAgente.style.width = "20rem";
+            btnAgente.style.height = "5rem";
+            btnAgente.style.fontSize = "40px";
+
+            indexClientes.style.width = "20%";
+            txtCliente.style.fontSize = "45px";
+            btnCliente.style.width = "11rem";
+            btnCliente.style.height = "2.5rem";
+            btnCliente.style.fontSize = "15px";
+
+        } else if (indexAgentes.style.width === "20%") {
+
+            indexAgentes.style.width = "80%";
+            txtAgente.style.fontSize = "120px";
+            btnAgente.style.width = "20rem";
+            btnAgente.style.height = "5rem";
+            btnAgente.style.fontSize = "40px";
+
+            indexClientes.style.width = "20%";
+            txtCliente.style.fontSize = "45px";
+            btnCliente.style.width = "11rem";
+            btnCliente.style.height = "2.5rem";
+            btnCliente.style.fontSize = "15px";
+
+        } else {
+
+            indexAgentes.style.width = "50%";
+            txtAgente.style.fontSize = "90px";
+            btnAgente.style.width = "17rem";
+            btnAgente.style.height = "4rem";
+            btnAgente.style.fontSize = "30px";
+
+            indexClientes.style.width = "50%";
+            txtCliente.style.fontSize = "90px";
+            btnCliente.style.width = "17rem";
+            btnCliente.style.height = "4rem";
+            btnCliente.style.fontSize = "30px";
+
+        }
+    });
+    indexClientes.addEventListener("click", function () {
+        if (indexClientes.style.width === "50%") {
+
+            indexClientes.style.width = "80%";
+            txtCliente.style.fontSize = "120px";
+            btnCliente.style.width = "20rem";
+            btnCliente.style.height = "5rem";
+            btnCliente.style.fontSize = "40px";
+
+            indexAgentes.style.width = "20%";
+            txtAgente.style.fontSize = "45px";
+            btnAgente.style.width = "11rem";
+            btnAgente.style.height = "2.5rem";
+            btnAgente.style.fontSize = "15px";
+
+        } else if (indexClientes.style.width === "20%") {
+
+            indexClientes.style.width = "80%";
+            txtCliente.style.fontSize = "120px";
+            btnCliente.style.width = "20rem";
+            btnCliente.style.height = "5rem";
+            btnCliente.style.fontSize = "40px";
+
+            indexAgentes.style.width = "20%";
+            txtAgente.style.fontSize = "45px";
+            btnAgente.style.width = "11rem";
+            btnAgente.style.height = "2.5rem";
+            btnAgente.style.fontSize = "15px";
+
+        } else {
+
+            indexClientes.style.width = "50%";
+            txtCliente.style.fontSize = "90px";
+            btnCliente.style.width = "17rem";
+            btnCliente.style.height = "4rem";
+            btnCliente.style.fontSize = "30px";
+
+            indexAgentes.style.width = "50%";
+            txtAgente.style.fontSize = "90px";
+            btnAgente.style.width = "17rem";
+            btnAgente.style.height = "4rem";
+            btnAgente.style.fontSize = "30px";
+
+        }
+    });
+</script>
+
+<!--JS GENERAL-->
+<script src="scriptGeneral.js"></script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: auto;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <header class="navbar-normal">
+        <img src="img/logo.png" alt="Logo" class="navbar-logo" id="logo">
+        <div class="flexRow">
+            <a href="clientes.php#btnBajar" class="navbar-text">Quiénes somos</a>
+            <a href="experienciagc.php" class="navbar-text" id="headerExpGC">Experiencia GC</a>
+            <a href="dancaceres.php" class="navbar-text" id="headerMentor">El Mentor de los Seguros</a>
+            <a href="CONTACTANOS.html" class="navbar-text" id="headerMentor">Contactanos</a>
+        </div>
+        
+    </header>
+    
+    <!--NAVBAR COMPACT-->
+    <header class="navbar-compact">
+        <img src="img/logo.png" alt="Logo" class="navbar-logo" id="logo">
+        <img src="img/x.png" alt="" style="display: none;" class="btnBurger" id="btnBurgerClose">
+        <img src="img/btnburger.png" alt="" class="btnBurger burgerExpandido" id="btnBurgerExpand">
+    </header>
+    <div class="navbarOpciones" id="navbar-opciones" style="display: none;">
+        <a href="clientes.php#btnBajar" class="navbar-text-compact">Quiénes somos</a>
+        <a href="experienciagc.php" class="navbar-text-compact">Experiencia GC</a>
+        <a href="dancaceres.php" class="navbar-text-compact" id="headerMentor">El Mentor de los Seguros</a>
+        <a href="CONTACTANOS.html" class="navbar-text-compact" id="headerMentor">Contactanos</a>
+        
+    </div>
+
+
+    <div class="indexOpciones">
+        <div class="indexClientes" id="indexClientes">
+            <h1 class="gb" id="txtCliente">Quiero un<br>Plan de retiro</h1>
+            <button class="gl" id="btnCliente">Información</button>
+        </div>
+        <div class="indexAgentes" id="indexAgentes">
+            <h1 class="gb" id="txtAgente">Quiero<br>ser agente</h1>
+            <button class="gl" id="btnAgente">Información</button>
+        </div>
+    </div>
+
+    <div>
+        <link rel="stylesheet"
+            href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" target="_blank" href="https://wa.link/ud3f6y">
+            <div class="rwb-tooltip" style="background-color: white;">WhatsApp!</div>
+            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+        </a>
+    </div>
+
+</body>
+
+<!--JS PERSONALIZADO-->
+<script type="text/javascript">
+    
+
+    var btnCliente = document.getElementById("btnCliente");
+    var btnAgente = document.getElementById("btnAgente");
+
+    btnCliente.addEventListener("click", function () {
+        window.location.href = "clientes.php";
+    });
+
+    btnAgente.addEventListener("click", function () {
+        window.location.href = "agentes.php";
+    });
+
+
+</script>
+
+<!--JS GENERAL-->
+<script src="scriptGeneral.js"></script>
+
+</html>
